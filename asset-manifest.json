@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gardener-frontend/static/css/main.7ff3f9fb.css",
+    "main.js": "/gardener-frontend/static/js/main.998e604a.js",
+    "static/js/787.cda612ba.chunk.js": "/gardener-frontend/static/js/787.cda612ba.chunk.js",
+    "index.html": "/gardener-frontend/index.html",
+    "main.7ff3f9fb.css.map": "/gardener-frontend/static/css/main.7ff3f9fb.css.map",
+    "main.998e604a.js.map": "/gardener-frontend/static/js/main.998e604a.js.map",
+    "787.cda612ba.chunk.js.map": "/gardener-frontend/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ff3f9fb.css",
+    "static/js/main.998e604a.js"
+  ]
+}
