@@ -1,0 +1,21 @@
+.square-table td {
+  font-size: 14px;
+  text-align: center;
+  text-size-adjust: auto;
+}
+
+/* .cell {
+  height: 100%;
+  width: 100%;
+  display: block;
+} */
+
+.cell {
+  display: flex;
+  flex: 1;
+}
+
+.dialog-button {
+  background-color: white;
+  color: black;
+}

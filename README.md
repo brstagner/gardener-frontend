@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Gardener
+
+Deployed at https://gardener.brstagner.com/
+
+## Overview
+
+This is the Node.js React frontend for a web application that gives users a visual interface for planning a flower garden. A user can save plants to a personal list, then place those plants in a virtual garden bed that displays the colors of the flowers that will be blooming in a selected month.
+
+The features chosen for the site are those that will help a home gardener plant species that will present visual interest year-round.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+The Express.js backend repository can be found here: [gardener-backend](https://github.com/brstagner/gardener-backend)
 
-In the project directory, you can run:
+## Standard User Flow
 
-### `npm start`
+A non-logged-in user should see options to "Log In" or "Register" on the home page. After logging in or registering, they can select "Plants" from the navigation menu to view their saved plants, or click the link on the home page. If they'd like to add plants to their list, they can select "Add a new plant" to find the new plant page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A user can select "Gardens" from the navigation bar to see a list of their saved gardens. Clicking "Add a garden" takes them to the new garden page. Clicking a saved garden link sends the user to the display page where they can see a visual representation of it at any month of the year. Selecting the "edit" button takes them to the garden editing page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Setup
 
-### `npm test`
+1. Install [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install packages:
 
-### `npm run build`
+   ```
+   $ npm i
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Create a config.json file in the src folder with the appropriate values:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```
+   {
+   "GARDENER_DEV_SERVER_BASE_URL": "[development server url, backend is set up for http://localhost:3000/]",
+   "GARDENER_PROD_SERVER_BASE_URL": "[production server url]"
+   }
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. To deploy:
 
-### `npm run eject`
+   Run the app in development mode.  
+   Opens in your default browser at localhost:[your port #]:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```
+   $ npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   Build for production:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```
+   $ npm build
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Test with Jest:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   ```
+   $ npm test
+   ```

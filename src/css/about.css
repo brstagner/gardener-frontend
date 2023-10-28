@@ -1,0 +1,30 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  /* display: flex;
+  align-items: center; */
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.icon {
+  display: flex;
+  justify-content: right;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+Typography {
+  text-align: center;
+}
