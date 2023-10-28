@@ -1,6 +1,6 @@
 # Gardener
 
-Deployed at https://gardener.brstagner.com/
+Deployed at https://www.brstagner.com/gardener-frontend
 
 ## Overview
 
