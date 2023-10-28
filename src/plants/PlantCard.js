@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import Plants from "./Plants";
 
-function PlantCard({ plant, deletePlant }) {
+function PlantCard ({ plant, deletePlant }) {
   const nav = useNavigate();
 
   // const cardColors = [plant.bloom_color.one || null, plant.bloom_color.two || null, plant.bloom_color.three || null];
@@ -32,17 +32,14 @@ function PlantCard({ plant, deletePlant }) {
   return (
     <Box key={plant.plant_id} sx={{ margin: 2 }}>
       <Card sx={{ minWidth: 275, maxWidth: "30%" }} elevation={5}>
-        {/* <div style={{ height: 40, backgroundColor: plant.bloom_color.one }}
-                ></div> */}
         <div
-          // style={{ backgroundColor: plant.bloom_color.one }}
           style={{
             backgroundColor: colorString,
             backgroundImage: colorString,
           }}>
           <CardMedia
             sx={{ height: 40, filter: "grayscale(100%)", opacity: 0.5 }}
-            image="sunflower.jpg"
+            image="gardener-frontend/sunflower.jpg"
             title="sunflower"
           />
         </div>
@@ -69,7 +66,6 @@ function PlantCard({ plant, deletePlant }) {
           <Button size="small" onClick={() => deletePlant(plant)}>
             delete
           </Button>
-          {/* <Button size="small" onClick={() => nav(`/plants/${plant.plant_id}`)}>Edit</Button> */}
         </CardActions>
       </Card>
     </Box>

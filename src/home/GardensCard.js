@@ -13,12 +13,12 @@ import {
   Typography,
 } from "@mui/material";
 
-function GardensCard({ currUser }) {
+function GardensCard ({ currUser }) {
   const nav = useNavigate("/");
 
   const [gardens, setGardens] = useState([]);
 
-  async function getGardens() {
+  async function getGardens () {
     try {
       let gardensRes = await Api.getUserGardens(currUser.token);
       setGardens(gardensRes);
@@ -37,7 +37,7 @@ function GardensCard({ currUser }) {
       <Card sx={{ minWidth: 275, maxWidth: "30%" }} elevation={5}>
         <CardMedia
           sx={{ height: 140 }}
-          image="wildflowers.jpg"
+          image="gardener-frontend/wildflowers.jpg"
           title="wildflowers"
         />
         <CardContent>

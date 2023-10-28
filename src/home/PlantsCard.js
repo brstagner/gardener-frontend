@@ -13,12 +13,12 @@ import {
   Typography,
 } from "@mui/material";
 
-function PlantsCard({ currUser }) {
+function PlantsCard ({ currUser }) {
   const nav = useNavigate();
 
   const [plants, setPlants] = useState([]);
 
-  async function getPlants() {
+  async function getPlants () {
     try {
       // let plantsRes = await Api.getUserPlants(+currUser.userId, currUser.token);
       let plantsRes = await Api.getUserPlants(currUser.token);
@@ -38,7 +38,7 @@ function PlantsCard({ currUser }) {
       <Card sx={{ minWidth: 275, maxWidth: "30%" }} elevation={5}>
         <CardMedia
           sx={{ height: 140 }}
-          image="sunflower.jpg"
+          image="gardener-frontend/sunflower.jpg"
           title="sunflower"
         />
         <CardContent>
